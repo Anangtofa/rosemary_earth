@@ -19,34 +19,34 @@
 # Allow building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# Allow putting ELF in PRODUCT_COPY_FILES (required by vibrator)
+# Allow putting ELF in PRODUCT_COPY_FILES
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/redmi/rosemary
+DEVICE_PATH := device/xiaomi/earth
 PREBUILT_PATH := $(DEVICE_PATH)/prebuilt
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a-dotprod
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a55
+TARGET_CPU_VARIANT := cortex-a53
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a55
+TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := rosemary
+TARGET_BOOTLOADER_BOARD_NAME := earth
 TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6785
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := rosemary,secret,maltose
+TARGET_OTA_ASSERT_DEVICE := earth
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
